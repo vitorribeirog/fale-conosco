@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --color-gradient: linear-gradient(100deg, #2d5966, #152d34, #0a3643);
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://lh3.googleusercontent.com/pw/ABLVV85fgQs_q3iHtZWMNum4IchjpJ52xciu9kWUeD6xuRyF4je_Gn0DAel6fLVHfQzWgtF_ZYfRzBhLyjhpN8egCLUCAborz0r4YDfg8TYy-q2jPcObZulbwl9ZR_44hFawNIv-1iUguzRAVrPHgr5l6Ysk=w1725-h970-s-no-gm?authuser=0");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+form {
+    background-color: #fff;
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+form h1,
+p {
+    text-align: center;
+}
+
+form h1 {
+    font-size: 30px;
+    color: #2D325A;
+}
+
+form p {
+    margin: 20px 0;
+}
+
+.input_single {
+    position: relative;
+    margin: 30px 0;
+}
+
+.input_single label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
+    font-size: 17px;
+    outline: none;
+    background-color: transparent;
+}
+
+form .input_single .input:focus~label,
+form .input_single .input:valid~label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #2D325A;
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit] {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2D325A;
+    color: #fff;
+    cursor: pointer;
+
+}

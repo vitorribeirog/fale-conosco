@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Form PHP</title>
+</head>
+
+<body>
+    <section class="form_container">
+        <div class="container">
+            <form method="post" action="data/php/script.php">
+                <h1>Entre em contato</h1>
+                <p>Preencha o formulário abaixo e entraremos em contato com você.</p>
+                <div class="input_single">
+                    <input type="text" name="name" id="name-box" class="input" autocomplete="off" required>
+                    <label for="name-box">Informe seu Nome Completo</label>
+                </div>
+                <div class="input_single">
+                    <input type="email" name="email" id="email-box" class="input" autocomplete="off" required>
+                    <label for="email-box">Informe seu E-mail</label>
+                </div>
+                <div class="input_single">
+                    <input type="tel" name="phone" id="tel-box" class="input" autocomplete="off" required>
+                    <label for="tel-box">Informe seu Telefone</label>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
